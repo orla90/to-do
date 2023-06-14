@@ -1,0 +1,33 @@
+.todo {
+  &-search-form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto 40px;
+
+    &__item {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-input,
+  &-select {
+    width: 100%;
+  }
+
+  &-label {
+    white-space: nowrap;
+  }
+}

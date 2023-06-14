@@ -1,0 +1,31 @@
+<form
+  class="todo-search-form"
+  [formGroup]="searchForm"
+  (submit)="submitApplication()"
+>
+  <div class="todo-search-form__item">
+    <label for="search" class="todo-label">Search:</label>
+    <input
+      formControlName="search"
+      class="todo-input"
+      type="search"
+      id="search"
+      name="search"
+      placeholder="Search todo by name..."
+    />
+  </div>
+  <div class="todo-search-form__item">
+    <label for="todo-status" class="todo-label">Status:</label>
+    <select
+      formControlName="status"
+      class="todo-select"
+      id="todo-status"
+      name="todo-status"
+    >
+      <option value="ordinary">Ordinary</option>
+      <option value="important">Important</option>
+      <option value="done">Done</option>
+    </select>
+  </div>
+  <button type="submit" class="todo-search-btn">Search</button>
+</form>

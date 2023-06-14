@@ -15,4 +15,9 @@ export class ToDoListComponent {
     this.todos = todoService.todos;
     this.filteredTodos = todoService.todos;
   }
+  
+  filterToDos(todo: ToDo) {
+    console.log('todo', todo)
+    this.filteredTodos = this.todoService.filterToDos(todo);
+  }
 }
