@@ -1,9 +1,10 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ToDo } from 'src/app/models/to-do';
 
 @Component({
   selector: 'app-to-do-item',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './to-do-item.component.html',
   styleUrls: ['./to-do-item.component.scss'],
 })

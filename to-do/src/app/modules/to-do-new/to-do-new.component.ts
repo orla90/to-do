@@ -1,9 +1,10 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ToDo } from 'src/app/classes/to-do';
 
 @Component({
   selector: 'app-to-do-new',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './to-do-new.component.html',
   styleUrls: ['./to-do-new.component.scss'],
 })

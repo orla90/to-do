@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ToDoService } from '../../services/to-do.service';
 import { ToDo } from 'src/app/models/to-do';
 
 @Component({
   selector: 'app-to-do-list',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './to-do-list.component.html',
   styleUrls: ['./to-do-list.component.scss'],
 })

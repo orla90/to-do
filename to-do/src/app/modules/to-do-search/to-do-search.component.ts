@@ -1,8 +1,9 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-to-do-search',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './to-do-search.component.html',
   styleUrls: ['./to-do-search.component.scss'],
 })
