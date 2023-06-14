@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ToDo } from 'src/app/models/to-do';
 
 @Component({
@@ -8,4 +8,5 @@ import { ToDo } from 'src/app/models/to-do';
 })
 export class ToDoItemComponent {
   @Input() public todo?: ToDo;
+  @Output() public deleteEvent = new EventEmitter();
 }

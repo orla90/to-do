@@ -10,6 +10,7 @@
     *ngFor="let todo of todoService.todos">
       <app-to-do-item
         [todo]="todo"
+        (deleteEvent)="todoService.deleteToDoById(todo.id)"
       />
     </li>
   </ul>
