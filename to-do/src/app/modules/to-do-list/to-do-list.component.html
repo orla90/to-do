@@ -1,0 +1,15 @@
+<section>
+  <ul class="todo-list">
+    <li  
+    [ngClass]="{
+      'todo-item': true,
+      'todo-item_important': todo.status === 'important',
+      'todo-item_done': todo.status === 'done',
+    }"
+    *ngFor="let todo of todoService.todos">
+      <app-to-do-item
+        [todo]="todo"
+      />
+    </li>
+  </ul>
+</section>

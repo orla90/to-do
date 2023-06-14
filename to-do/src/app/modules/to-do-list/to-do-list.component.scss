@@ -1,0 +1,20 @@
+.todo-list {
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  list-style: none;
+  padding: 5px;
+  margin: 3px;
+  border: 2px solid grey;
+  border-radius: 5px;
+
+  &_important {
+    border-color: red;
+  }
+
+  &_done {
+    border-color: green;
+  }
+}
