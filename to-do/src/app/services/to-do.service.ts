@@ -57,7 +57,7 @@ export class ToDoService {
       status: 'ordinary',
     },
   ];
-  constructor() {}
+  constructor() { }
 
   addToDo(todo: ToDo): void {
     if (!todo.todo) return;
@@ -84,13 +84,12 @@ export class ToDoService {
     return this.todos.filter((todo) => todo.id === id).pop();
   }
 
-  toggleToDoStatusById(
-    id: number,
-    status: 'ordinary' | 'important' | 'done'
-  ): void {
-    let todo = this.getToDoById(id);
-    if (!todo) return;
-    this.todos = [...this.todos, Object.assign(todo, status)];
+  toggleToDoStatusById(todo: ToDo): void {
+    let todoNote = this.getToDoById(todo.id) as ToDo;
+    todoNote = { ...todoNote, status: todo.status }
+    if (!todoNote) return;
+    this.todos = this.todos.filter(todo => todo.id !== todoNote.id);
+    this.todos = [...this.todos, todoNote];
   }
 
   filterToDos(todo: ToDo): ToDo[] {

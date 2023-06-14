@@ -2,15 +2,16 @@
   <app-to-do-search (searchEvent)="filterToDos($event)"></app-to-do-search>
   <ul class="todo-list">
     <li  
+    *ngFor="let todo of todoService.todos"
     [ngClass]="{
       'todo-item': true,
       'todo-item_important': todo.status === 'important',
       'todo-item_done': todo.status === 'done',
-    }"
-    *ngFor="let todo of todoService.todos">
+    }">
       <app-to-do-item
         [todo]="todo"
         (deleteEvent)="todoService.deleteToDoById(todo.id)"
+        (changeStatusEvent)="todoService.toggleToDoStatusById($event)"
       />
     </li>
   </ul>
