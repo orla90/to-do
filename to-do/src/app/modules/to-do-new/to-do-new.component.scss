@@ -1,0 +1,33 @@
+.todo {
+  &-add-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+
+    &__item {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-input,
+  &-select {
+    width: 100%;
+  }
+
+  &-label {
+    white-space: nowrap;
+  }
+  
+  &-error {
+    font-size: 11px;
+  }
+}
