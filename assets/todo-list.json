@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "todo": "Do something nice for someone I care about",
+    "status": "done"
+  },
+  {
+    "id": 2,
+    "todo": "Memorize the fifty states and their capitals",
+    "status": "done"
+  },
+  {
+    "id": 3,
+    "todo": "Watch a classic movie",
+    "status": "ordinary"
+  },
+  {
+    "id": 4,
+    "todo": "Contribute code or a monetary donation to an open-source software project",
+    "status": "ordinary"
+  },
+  {
+    "id": 5,
+    "todo": "Solve a Rubik's cube",
+    "status": "important"
+  },
+  {
+    "id": 6,
+    "todo": "Bake pastries for me and neighbor",
+    "status": "important"
+  },
+  {
+    "id": 7,
+    "todo": "Go see a Broadway production",
+    "status": "ordinary"
+  },
+  {
+    "id": 8,
+    "todo": "Write a thank you letter to an influential person in my life",
+    "status": "ordinary"
+  },
+  {
+    "id": 9,
+    "todo": "Invite some friends over for a game night",
+    "status": "ordinary"
+  },
+  {
+    "id": 10,
+    "todo": "Have a football scrimmage with some friends",
+    "status": "ordinary"
+  }
+]
